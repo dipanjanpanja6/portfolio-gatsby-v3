@@ -1,0 +1,10 @@
+div.container-intro {
+    display: flex;
+    align-items: flex-end;
+}
+
+@media (max-width: 600px) {
+    div.container-intro {
+        display: block
+    }
+}

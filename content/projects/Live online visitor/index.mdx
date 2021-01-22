@@ -1,0 +1,71 @@
+---
+title: "Live visitor counter - server less real-time online visitors counter."
+shortTitle: "Live visitor counter"
+category: "Website"
+color: "#ffaeae"
+slug: '/online-visitor-counter'
+cover: "./projects-live-online-visitor.jpg"
+date: "2021-07-03"
+---
+
+server less real-time online visitors counter with firebase Realtime database
+you can implement in any JavaScript based frontend/html/react js/angular js
+
+----
+
+### Tech
+
+Live visitor counter uses a number of open source projects to work properly:
+
+* [HTML] - HTML enhanced for web apps!
+* [JS] - JavaScript 
+* [CSS] - css
+* [Firebase] - Firebase Realtime database
+
+And of course Wearest is open source with a [public repository][online-visitor-counter] on GitHub.
+
+you can implement in any javascript based frontend/html/react js/angular js
+
+just replace the config object with your own
+ 
+ ### HTML
+ 
+Real-time online visitors counter using firebase realtime database
+
+1. create firebase project https://firebase.google.com/docs/web/setup
+2. goto firebase realtime database and create a new one.
+3. navigate to rules tab and add rules like this.
+```javascript
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+      "tempUser":{
+        ".read":true,
+         ".write":true,
+         ".indexOn":"state"
+      }
+  }
+}
+```
+3. now goto html/index.html
+4. replace firebaseConfig with your own
+```javascript
+var firebaseConfig = {
+  apiKey: "API_KEY",
+  authDomain: "PROJECT_ID.firebaseapp.com",
+  databaseURL: "https://PROJECT_ID.firebaseio.com",
+  projectId: "PROJECT_ID",
+  storageBucket: "PROJECT_ID.appspot.com",
+  messagingSenderId: "SENDER_ID",
+  appId: "APP_ID",
+  measurementId: "G-MEASUREMENT_ID",
+};
+```
+4. run index.html
+
+   [online-visitor-counter]: <https://github.com/dipanjanpanja6/online-visitor-counter>
+   [Firebase]: <https://web.app>
+   [JS]: <https://www.javascript.com/>
+   [HTML]: <#>
+   [CSS]: <#>

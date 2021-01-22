@@ -1,0 +1,35 @@
+a.ember-view {
+    box-shadow: #d4d4d4 -4px 2px 5px 0px;
+    border-radius: 50px;
+    padding: 28px;
+}
+.ember-view {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.pv-profile-section {
+    padding: 12px;
+}
+
+.pv-entity__logo {
+    width: 55px;
+    height: 55px;
+}
+.pv-entity__summary-info{
+    display: inline;
+    padding-left: 12px;
+}
+
+.root p,h3{
+    margin: 0;
+    color: black;
+    line-height: 1.2;
+}
+.root p{
+    font-size: 13px;
+    color: gray;
+}

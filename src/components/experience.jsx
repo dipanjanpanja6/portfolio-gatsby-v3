@@ -4,12 +4,12 @@ import useInstagram from "../hooks/use-instagram"
 import Heart from "./heart"
 import "./style.css"
 
-const Instagram = () => {
-  const nodes = useInstagram()
+const Experience = () => {
+  // const nodes = useInstagram()
 
   return (
     <div className="instagram-grid">
-      {nodes.map((post) => {
+      {/* {nodes.map((post) => {
         const title = post.caption ? post.caption.split(`#`)[0] : ``
         const date = new Date(post.timestamp * 1000).toLocaleDateString()
 
@@ -28,9 +28,23 @@ const Instagram = () => {
             </div>
           </a>
         )
-      })}
+      })} */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
     </div>
   )
 }
 
-export default Instagram
+export default Experience
